@@ -1,0 +1,57 @@
+@import url(bootstrap.css);
+@import url(normalize.css);
+@import url(font_awesome.css);
+
+:root {
+    --primary-color: color-mix(in srgb, blueviolet 80%, purple);
+}
+
+body {
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 800;
+    background: #010101;
+    color: var(--primary-color);
+    min-height: 100svh;
+    width: 100%;
+    margin: 0;
+}
+
+a, a:visited:hover, a:visited, a:hover, a:disabled, a:empty {
+    text-decoration: none;
+}
+
+table {
+    background: var(--primary-color);
+    background: linear-gradient(
+        45deg,
+        purple 0%,
+        magenta 20%,
+        blue 100%
+    );
+}
+
+#output-self {
+    width: 100%;
+    aspect-ratio: 4/1;
+    background: rgba(255, 255, 255, 0.3)
+}
+
+table td {
+    width: 100px;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+
+table button {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    font-size: 36px;
+}
+
+table td:last-of-type {
+    aspect-ratio: 2/1;
+}
+
+table button:last-of-type {
+    width: 100%;
+}
